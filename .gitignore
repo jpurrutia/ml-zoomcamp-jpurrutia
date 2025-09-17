@@ -7,4 +7,50 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+.venv/
+venv/
+ENV/
+
+# UV
+# Note: uv.lock is tracked for reproducibility, don't ignore it
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data - exclude large files
+data/full/
+data/processed/
+data/*.zip
+data/*.tar.gz
+*.h5
+*.pkl
+*.pickle
+
+# Model artifacts
+models/
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.tflite
+
+# Logs
+logs/
+*.log
+wandb/
+mlruns/
+
+# Environment variables
+.env
+.env.local
+
+# OS
+Thumbs.db
