@@ -1,5 +1,14 @@
 # ML Zoomcamp Project Context
 
+## ⚠️ IMPORTANT: Session Context Updates
+**Update this file at the start of each development session with:**
+- Current module/week being worked on
+- Any ongoing issues or blockers
+- Recent changes made
+- Next planned tasks
+
+See `log.md` for detailed session history.
+
 ## Project Overview
 Machine Learning Zoomcamp 2025 course work and projects.
 
@@ -35,3 +44,10 @@ Machine Learning Zoomcamp 2025 course work and projects.
 2. Activate environment: `source .venv/bin/activate`
 3. Start Jupyter: `make notebook`
 4. Before commits: `make format` and `make lint`
+
+## Current Session Context
+**Last Updated:** 2025-09-17
+- **Status:** Initial repository setup complete
+- **Environment:** Dual support for local and Codespaces configured
+- **Recent Changes:** Fixed UV installation path for new installer version
+- **Next Tasks:** Test Codespaces deployment, begin Module 1 exercises

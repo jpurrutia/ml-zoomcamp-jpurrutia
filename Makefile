@@ -38,4 +38,9 @@ lint:
 	black --check .
 
 notebook:
-	jupyter notebook
+	@which jupyter-lab > /dev/null 2>&1 && jupyter lab --no-browser --ip=0.0.0.0 --port=8888 || \
+	(which jupyter > /dev/null 2>&1 && jupyter server --no-browser --ip=0.0.0.0 --port=8888) || \
+	echo "Error: Jupyter not properly installed. Run 'make install' first."
+
+lab:
+	jupyter lab --no-browser --ip=0.0.0.0 --port=8888
