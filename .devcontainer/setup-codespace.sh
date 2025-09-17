@@ -5,7 +5,14 @@ echo "🚀 Setting up ML Zoomcamp Codespace environment..."
 
 # Install UV
 curl -LsSf https://astral.sh/uv/install.sh | sh
-source $HOME/.cargo/env
+
+# UV now installs to ~/.local/bin, add to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Also check the old cargo location just in case
+if [ -f "$HOME/.cargo/env" ]; then
+    source $HOME/.cargo/env
+fi
 
 # Create virtual environment and install dependencies
 uv venv
